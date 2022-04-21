@@ -15,7 +15,7 @@
                 session_start();
                 $_SESSION["user"] = $user;
 
-                echo json_encode(["status" => "SUCCES", "message" => "Входът е успешен!"]); 
+                echo json_encode(["status" => "SUCCESS", "message" => "Входът е успешен!"]); 
 
             } else {
                 http_response_code(400);

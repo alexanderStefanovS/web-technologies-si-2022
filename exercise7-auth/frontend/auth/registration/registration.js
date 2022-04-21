@@ -38,7 +38,6 @@ function registration(userData) {
     .catch(err => {
         const errMsgEL = document.getElementById('err-msg');
         errMsgEL.innerText = err.message;
-     
     });
 }
 
