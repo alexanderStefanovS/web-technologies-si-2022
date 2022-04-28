@@ -4,7 +4,7 @@
     require_once("../db/db.php");
 
     function isUserDataValid($userData) {
-        if (!isset($userData["email"]) && !isset($userData["password"]) && !isset($userData["rolesId"])) {
+        if (!isset($userData["email"]) || !isset($userData["password"])) {
             return ["isValid" => false, "message" => "Некоректни данни!"];
         }
 

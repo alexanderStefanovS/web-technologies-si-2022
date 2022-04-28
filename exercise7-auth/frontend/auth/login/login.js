@@ -19,7 +19,7 @@ function login(loginData) {
     .then(res => res.json())
     .then(data => {
         if (data.status === 'SUCCESS') {
-            location.replace('../../subjects/subjects.html');
+            // location.replace('../../subjects/subjects.html');
         } else {
             console.error(data.message);
         }

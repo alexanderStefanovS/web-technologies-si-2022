@@ -19,7 +19,7 @@
 
             } else {
                 http_response_code(400);
-                echo json_encode(["status" => "ERROR", "message" => "Входът е неуспешен!"]); 
+                echo json_encode(["status" => "ERROR", "message" => "Потребител с такъв имейл не е намерен!"]); 
             }
 
         } catch (Exception $e) {

@@ -49,6 +49,9 @@ function registration(userData) {
         const errMsgEL = document.getElementById('err-msg');
         errMsgEL.innerText = null;
 
+        const successMsgEL = document.getElementById('success-msg');
+        successMsgEL.innerText = null;
+
         const email = document.getElementById('email').value;
         const password = document.getElementById('pass').value;
         const rePassword = document.getElementById('re-pass').value;
