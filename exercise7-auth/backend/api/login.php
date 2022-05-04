@@ -15,6 +15,9 @@
                 session_start();
                 $_SESSION["user"] = $user;
 
+                setcookie('email', $userData['email'], time() + 600, '/');
+                setcookie('password', $userData['password'], time() + 600, '/');
+
                 echo json_encode(["status" => "SUCCESS", "message" => "Входът е успешен!"]); 
 
             } else {
