@@ -17,6 +17,10 @@
 
         echo json_encode(["WEB Технологии"]);
 
+        $sql = "SELECT * 
+                from Subjects s join Users_Subjects us on s.id = us.subjects_id
+                where us.users_id = :id";
+
     } else {
         http_response_code(401);
         echo json_encode(["message" => "Потребителят не е автентикиран"]);
